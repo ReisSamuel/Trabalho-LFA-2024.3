@@ -1,0 +1,31 @@
+{
+    "states": ["Q0", "Q1", "Q2", "Q3", "Q4", "Q5"],
+    "alphabet": ["a", "b", "c"],
+    "transitions": [
+        {"from": "Q0", "to": "Q0", "symbol": "b"},
+        {"from": "Q0", "to": "Q0", "symbol": "c"},
+        {"from": "Q0", "to": "Q1", "symbol": "a"},
+  
+        {"from": "Q1", "to": "Q1", "symbol": "a"},
+        {"from": "Q1", "to": "Q1", "symbol": "c"},
+        {"from": "Q1", "to": "Q2", "symbol": "b"},
+  
+        {"from": "Q2", "to": "Q2", "symbol": "a"},
+        {"from": "Q2", "to": "Q2", "symbol": "b"},
+        {"from": "Q2", "to": "Q3", "symbol": "c"},
+  
+        {"from": "Q3", "to": "Q3", "symbol": "b"},
+        {"from": "Q3", "to": "Q3", "symbol": "c"},
+        {"from": "Q3", "to": "Q4", "symbol": "a"},
+  
+        {"from": "Q4", "to": "Q4", "symbol": "a"},
+        {"from": "Q4", "to": "Q4", "symbol": "c"},
+        {"from": "Q4", "to": "Q5", "symbol": "b"},
+  
+        {"from": "Q5", "to": "Q5", "symbol": "a"},
+        {"from": "Q5", "to": "Q5", "symbol": "b"},
+        {"from": "Q5", "to": "Q0", "symbol": "c"}
+    ],
+    "startState": "Q0",
+    "finalStates": ["Q4", "Q5"]
+  }
